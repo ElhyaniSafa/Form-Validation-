@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter des valeurs</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+<form class="form" id="monFormulaire">
+    <div>
+        <label>Nom</label>
+        <input type="text" id="Nom" placeholder="Votre nom">
+        <p id="errNom" class="error"></p>
+    </div>
+
+    <div>
+        <label>Prénom</label>
+        <input type="text" id="Prenom" placeholder="Votre prénom">
+        <p id="errPrenom" class="error"></p>
+    </div>
+
+    <div>
+        <label>Date de naissance</label>
+        <input type="date" id="naissance">
+        <p id="errNaiss" class="error"></p>
+    </div>
+
+    <div>
+        <label>Sexe</label>
+        <div id="sexeContainer">
+            <label><input type="radio" name="sexe" value="Homme"> Homme</label>
+            <label><input type="radio" name="sexe" value="Femme"> Femme</label>
+        </div>
+        <p id="errSexe" class="error"></p>
+    </div>
+
+    <div>
+        <label>Ville</label>
+        <select id="ville">
+            <option value="">--Choisir une ville--</option>
+            <option value="Ouarzazate">Ouarzazate</option>
+            <option value="Marrakech">Marrakech</option>
+            <option value="Marrakech1">Tanger</option>
+            <option value="Marrakech2">Oujda</option>
+        </select>
+        <p id="errVille" class="error"></p>
+    </div>
+
+    <div>
+        <label>Photo</label>
+        <input type="file" id="photo">
+        <p id="errPhoto" class="error"></p>
+    </div>
+
+    <div>
+        <button type="button" id="btnValider">Valider</button>
+        <button type="button" id="btnVider">Vider</button>
+    </div>
+
+    <div class="affichage">
+        <p id="affichage" class="success"></p>
+    </div>
+</form>
+
+<script src="form.js"></script>
+</body>
+</html>
